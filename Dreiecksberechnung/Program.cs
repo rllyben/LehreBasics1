@@ -18,10 +18,12 @@
             int hoehe = int.Parse(Console.ReadLine());
 
             // bessere Formel waere basis * hoehe / 2
-            int flaeche = (int)(0.5 * basis * hoehe);
+            // int flaeche = (int)(0.5 * basis * hoehe);
+            int flaeche = (basis * hoehe) / 2;
             Console.WriteLine("Fläche:" + flaeche);
 
-
         }
+
     }
+
 }
