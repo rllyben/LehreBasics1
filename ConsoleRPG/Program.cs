@@ -14,7 +14,9 @@
             hero = Console.ReadLine();
             Console.WriteLine("Your character name is: " + hero);
 
-            Console.WriteLine("");
+
+            Console.WriteLine("Main Menue:");
+            Console.WriteLine("1. ");
 
         }
 
