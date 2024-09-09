@@ -11,13 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operatoren", "Operatoren\Op
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dreiecksberechnung", "Dreiecksberechnung\Dreiecksberechnung.csproj", "{4D305B4E-7A13-407E-94C5-4464664278D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taschenrechner", "Taschenrechner\Taschenrechner.csproj", "{92A1F660-393B-40B3-A315-5126C26A9A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taschenrechner", "Taschenrechner\Taschenrechner.csproj", "{92A1F660-393B-40B3-A315-5126C26A9A11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abzweigungen", "Abzweigungen\Abzweigungen.csproj", "{8B7BA425-F672-4B45-BBBD-FB298FAC5DA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abzweigungen", "Abzweigungen\Abzweigungen.csproj", "{8B7BA425-F672-4B45-BBBD-FB298FAC5DA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textetventure1", "Textetventure1\Textetventure1.csproj", "{CB057BCA-385E-4FDB-BB7A-83CC1F7508C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Textetventure1", "Textetventure1\Textetventure1.csproj", "{CB057BCA-385E-4FDB-BB7A-83CC1F7508C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRPG", "ConsoleRPG\ConsoleRPG.csproj", "{55FD9CFD-359E-4293-95B1-90EA6D63F1A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleRPG", "ConsoleRPG\ConsoleRPG.csproj", "{55FD9CFD-359E-4293-95B1-90EA6D63F1A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rechner", "Rechner\Rechner.csproj", "{4647BBE5-0F04-4F24-B471-054346ED4310}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{55FD9CFD-359E-4293-95B1-90EA6D63F1A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55FD9CFD-359E-4293-95B1-90EA6D63F1A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55FD9CFD-359E-4293-95B1-90EA6D63F1A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4647BBE5-0F04-4F24-B471-054346ED4310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4647BBE5-0F04-4F24-B471-054346ED4310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4647BBE5-0F04-4F24-B471-054346ED4310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4647BBE5-0F04-4F24-B471-054346ED4310}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
