@@ -7,7 +7,7 @@
             float zahl1= 0;
             float zahl2= 0;
             int error = 0;
-            string rechenzeichen = "";
+            char rechenzeichen = '0';
             int loop = 0;
 
             while (loop == 0 || error != 0)
@@ -25,9 +25,19 @@
                 }
 
                 Console.WriteLine("Rechenzeichen (+ - * /)");
-                rechenzeichen = Console.ReadLine();
+                // hello h[0]e[1]l[2]l[3]o[4]
+                // rechenzeichen = Console.ReadLine()[0];
 
-                Console.WriteLine("Zahl 2:");
+                // Readkey liefert keinen primitiven Datentypen
+                // man musss mit .KeyChar auf das Zeichen zugreifen
+                // erzeugt keine neue Zeile
+                rechenzeichen = Console.ReadKey().KeyChar;
+                
+                //erzeugt eine neue Zeile
+                //Console.WriteLine();
+
+                // Formatstring fuer einen Zeilenumbruch: \n
+                Console.WriteLine("\nZahl 2:");
                 try
                 {
                     zahl2 = float.Parse(Console.ReadLine());
@@ -46,21 +56,22 @@
             }
 
 
-            if (rechenzeichen == "+" && error != 1)
+            if (rechenzeichen == '+' && error != 1)
             {
-                Console.WriteLine(zahl1 + zahl2);
+                Console.WriteLine("Ergebnis: {0}", zahl1 + zahl2);
             }
-            else if (rechenzeichen == "-" && error != 1)
-            {
-                Console.WriteLine(zahl1 - zahl2);
+            else if (rechenzeichen == '-' && error != 1)
+            { 
+                // {0} kann als Platzhalter fuer eine Variable verwendet werden
+                Console.WriteLine("Ergebnis: {0}", (zahl1 - zahl2));
             }
-            else if (rechenzeichen == "*" && error != 1)
+            else if (rechenzeichen == '*' && error != 1)
             {
-                Console.WriteLine(zahl1 * zahl2);
+                Console.WriteLine("Ergebnis: {0}", zahl1 * zahl2);
             }
-            else if (rechenzeichen == "/" && error != 1 && zahl2 != 0)
+            else if (rechenzeichen == '/' && error != 1 && zahl2 != 0)
             {
-                Console.WriteLine(zahl1 / zahl2);
+                Console.WriteLine("Ergebnis: {0}", zahl1 / zahl2);
             }
             else
             {
