@@ -64,6 +64,12 @@ namespace ConsoleRPG
                             Console.WriteLine("back with 0");
 
                             atventureAction = Console.ReadKey().KeyChar;
+                            if (atventureAction != '0' && atventureAction != ' ' && atventureAction != '1' && atventureAction != '2' && atventureAction != '3' &&
+                                atventureAction != '4' && atventureAction != '5' && atventureAction != '6' && atventureAction != '7')
+                            {
+                                atventureAction = ' ';
+                                Console.WriteLine("Wrong input plese try again:");
+                            }
 
                             if (atventureAction == '0') 
                             {
@@ -86,6 +92,12 @@ namespace ConsoleRPG
                                         Console.WriteLine("back with 0");
 
                                         roumenAction = Console.ReadKey().KeyChar;
+                                        if (roumenAction != '0' && roumenAction != ' ' && roumenAction != '1' && roumenAction != '2' && roumenAction != '3' &&
+                                           roumenAction != '4' && roumenAction != '5' && roumenAction != '6' && roumenAction != '7')
+                                        {
+                                            roumenAction = ' ';
+                                            Console.WriteLine("Wrong input plese try again:");
+                                        }
 
                                         if (roumenAction == '0') { roumenAction = ' '; atventureAction = ' '; break; }
 
@@ -138,6 +150,12 @@ namespace ConsoleRPG
                                                     Console.WriteLine("back with 0");
 
                                                     jamesAction = Console.ReadKey().KeyChar;
+                                                    if (jamesAction != '0' && jamesAction != ' ' && jamesAction != '1' && jamesAction != '2' && jamesAction != '3' &&
+                                                        jamesAction != '4' && jamesAction != '5' && jamesAction != '6' && jamesAction != '7')
+                                                    {
+                                                        jamesAction = ' ';
+                                                        Console.WriteLine("Wrong input plese try again:");
+                                                    }
 
                                                     if (jamesAction == '0') { roumenAction = ' '; jamesAction = ' '; break; }
 

@@ -8,7 +8,6 @@ namespace ConsoleRPG
 {
     public class Items
     {
-        public required int dmg {  get; set; }
-        public required int hp { get; set; }
+        
     }
 }
