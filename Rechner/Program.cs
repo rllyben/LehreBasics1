@@ -71,7 +71,7 @@
             }
             else if (rechenzeichen == '/' && error != 1 && zahl2 != 0)
             {
-                Console.WriteLine("Ergebnis: {0}", zahl1 / zahl2);
+                Console.WriteLine($"Ergebnis: { zahl1 / zahl2}");
             }
             else
             {
