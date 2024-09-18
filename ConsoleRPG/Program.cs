@@ -100,6 +100,7 @@ namespace ConsoleRPG
                                         Console.Clear();
                                         Console.WriteLine("\nQuests are currently unavailable");
                                         roumenAction = ' ';
+                                        Console.ReadKey();
                                         break;
                                     }
                                     case '2':
@@ -108,6 +109,7 @@ namespace ConsoleRPG
                                         Console.WriteLine("\nThe Healer heals you to your full HP");
                                         hero.curHealth = hero.maxHealth;
                                         roumenAction = ' ';
+                                        Console.ReadKey();
                                         break;
                                     }
                                     case '3':
@@ -115,6 +117,7 @@ namespace ConsoleRPG
                                         Console.Clear();
                                         Console.WriteLine("\nYou enter the Forest of Mist!\n");
                                         Console.WriteLine("");
+                                        Console.ReadKey();
                                         break;
                                     }
                                     case '4':
@@ -122,6 +125,7 @@ namespace ConsoleRPG
                                         Console.Clear();
                                         Console.WriteLine("\nYou enter the Sandy Beach!\n");
                                         Console.WriteLine("");
+                                        Console.ReadKey();
                                         break;
                                     }
                                     case '5':
@@ -155,6 +159,7 @@ namespace ConsoleRPG
                                                                   "2. Iron Sword (lvl: 5; dmg: 15; actionSpeed: 1) 20$\n" +
                                                                   "3. Iron Hammer (lvl: 15; dmg: 80 actionSpeed: 5)  40$");
                                                 Console.WriteLine("which one do you want to buy?\nback with 0");
+                                                Console.ReadKey();
                                                 break;
                                             }
                                             default:
@@ -184,11 +189,13 @@ namespace ConsoleRPG
                     {
                         Console.WriteLine("The shop is currently unavailable!");
                         mainAction = ' ';
+                        Console.ReadKey();
                         break;
                     }
                     default:
                         Console.WriteLine("Wrong input please try again:");
                         mainAction = ' ';
+                        Console.ReadKey();
                         break;
 
                 }
