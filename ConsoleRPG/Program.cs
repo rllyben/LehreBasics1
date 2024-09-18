@@ -79,8 +79,8 @@ namespace ConsoleRPG
                                 while (roumenAction == ' ')
                                 {
                                     Console.WriteLine("\nYou enter Roumen. What do you want to do?\n" +
-                                                      "2. Search for Quests           3. Go to the Healer\n" +
-                                                      "4. Enter the Forest of Mist    5. Go to the Sandy Beach\n" +
+                                                      "1. Search for Quests           2. Go to the Healer\n" +
+                                                      "3. Enter the Forest of Mist    4. Go to the Sandy Beach\n" +
                                                       "5. Go to the Blacksmith");
                                     Console.WriteLine("back with 0");
 
