@@ -17,10 +17,10 @@ namespace ConsoleRPG
             Hero hero = new Hero() { name= Console.ReadLine() };
             Console.WriteLine("Your character name is: " + hero.name);
 
-            while (hero.curHealth >= 0 && mainAction != '0')
+            while (hero.CurrentHealth() >= 0 && mainAction != '0')
             {
-                if (hero.curHealth > hero.maxHealth) 
-                    hero.curHealth = hero.maxHealth;
+                if (hero.CurrentHealth() > hero.MaxHealth())
+                    hero.Healer();
 
                 while (mainAction == ' ')
                 {
@@ -43,9 +43,9 @@ namespace ConsoleRPG
                         Console.Clear();
 
                         Console.ForegroundColor = ConsoleColor.DarkRed;
-                        Console.WriteLine("\n" + hero.name + "   Level:" + hero.lvl);
+                        Console.WriteLine("\n" + hero.name + "   Level:" + hero.Level());
                         Console.ResetColor();
-                        Console.WriteLine("\n       Max HP: " + hero.maxHealth + "\n       dmg: " + hero.damage + "\n       action speed: " + hero.actionSpeed + "\n");
+                        Console.WriteLine("\n       Max HP: " + hero.MaxHealth() + "\n       dmg: " + hero.Damage() + "\n       action speed: " + hero.ActionSpeed() + "\n");
                         mainAction = ' ';
                         break;
                     }
@@ -107,7 +107,7 @@ namespace ConsoleRPG
                                     {
                                         Console.Clear();
                                         Console.WriteLine("\nThe Healer heals you to your full HP");
-                                        hero.curHealth = hero.maxHealth;
+                                        hero.Healer();
                                         roumenAction = ' ';
                                         Console.ReadKey();
                                         break;
@@ -202,7 +202,7 @@ namespace ConsoleRPG
 
             }
 
-            if (hero.curHealth <= 0)
+            if (hero.CurrentHealth() <= 0)
             {
                 Console.WriteLine("\n Game Over");
             }
